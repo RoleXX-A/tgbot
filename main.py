@@ -6,6 +6,6 @@ bot = telebot.TeleBot(secret_key)
 
 @bot.message_handler(commands=['start'])
 def start(message):
-  bot.send_message(message.chat.id, 'Hello' )
+  bot.send_message(message.chat.id, 'Угадай цвет масти карты: 🟥 или ⬛️' )
 
 bot.infinity_polling()
